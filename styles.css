@@ -1,0 +1,72 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline:2px solid red;
+}
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+.main-container{
+    display:flex;
+    flex-direction:column;
+}
+.top-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    background-color: aquamarine;
+}
+#signature{
+    display:flex;
+    align-items: center;
+}
+#signature>*{
+    margin:5px;
+}
+img{
+    border-radius: 50%;
+    height: 75px;
+    width: auto;
+
+}
+#addBook{
+    height:4rem;
+    width:8rem;
+    border-radius:25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#addBook:hover{
+    background-color: aqua;
+}
+#addBook:active{
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+}
+#search{
+    height:2rem;
+    width:20rem;
+}
+.book-container{
+    display:grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 5rem;
+    grid-auto-rows:30%;
+    grid-auto-columns:30%;
+    gap:15px 15px;
+}
+#footer{
+    position:fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
